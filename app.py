@@ -141,7 +141,7 @@ def run_tts(text: str, voice_storage) -> str:
     voice_storage.save(tmp)
     out = f"outputs/out_{uuid.uuid4().hex}.wav"
     try:
-        tts.tts_to_file(text=text, speaker_wav=tmp, language="kn", file_path=out)
+        tts.tts_to_file(text=text, speaker_wav=tmp, language="hi", file_path=out)
     finally:
         if os.path.exists(tmp):
             os.remove(tmp)
