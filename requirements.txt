@@ -1,0 +1,4 @@
+TTS
+flask
+torch
+torchaudio
